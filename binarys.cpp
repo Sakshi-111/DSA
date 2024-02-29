@@ -17,7 +17,7 @@ using namespace std;
 //     }
 //     mid=start +(start-end)/2;
 // }
-//return -1;
+// return -1;
 // }
 // int main(){
 //     int arri[8]={1,2,3,4,5,6,7,8};
@@ -27,47 +27,64 @@ using namespace std;
 // }
 
 
-/*interview questions*/
-int firstocc(int arr[],int size,int key){
+// /*interview questions*/
+// int firstocc(int arr[],int size,int key){
+//     int start=0;
+//     int end=size-1;
+//     int mid=start+ (end-start)/2;
+//     int ans=-1;
+//     while(start<=end){
+//         if(arr[mid]==key){
+//              ans=mid;
+//             end=mid-1;
+//         }
+//         else if(arr[mid]>key){
+//             end=mid-1;
+//         }
+//         else{start=mid+1;}
+//          mid=start+(end-start)/2;
+//     }
+    
+//     return ans;
+// }
+// int lastocc(int arr[],int size, int key){
+//     int start =0;
+//     int end=size-1;
+//     int mid=start+(end-start)/2;
+//     int ans=-1;
+//     while(start<=end){
+//         if(arr[mid]==key){
+//             ans=mid;
+//             start=mid+1;
+
+//         }
+//         else if(arr[mid]>key){
+//             end=mid-1;
+//         }
+//         else{start=mid+1;}
+//         mid=start+(end-start)/2;
+//     }
+//     return ans;
+// }
+
+//peak index in a mountain array
+int peak(int arr[],int size){
     int start=0;
     int end=size-1;
-    int mid=start+ (end-start)/2;
-    int ans=-1;
-    while(start<=end){
-        if(arr[mid]==key){
-             ans=mid;
-            end=mid-1;
-        }
-        else if(arr[mid]>key){
-            end=mid-1;
-        }
-        else{start=mid+1;}
-         mid=start+(end-start)/2;
-    }
-    
-    return ans;
-}
-int lastocc(int arr[],int size, int key){
-    int start =0;
-    int end=size-1;
     int mid=start+(end-start)/2;
-    int ans=-1;
-    while(start<=end){
-        if(arr[mid]==key){
-            ans=mid;
+    while(start<end){
+        if(arr[mid]<arr[mid+1] ){
             start=mid+1;
-
         }
-        else if(arr[mid]>key){
-            end=mid-1;
+        else{
+            end=mid;
         }
-        else{start=mid+1;}
         mid=start+(end-start)/2;
+
+
     }
-    return ans;
+    return start;
 }
 int main(){
-    int arr[5]={1,2,3,3,4};
-   cout<< firstocc(arr,5,3);
-   cout<< lastocc(arr,5,3);
-}
+    int arr[7]={1,2,3,4,3,2,1};
+  cout<<peak(arr,7);}
