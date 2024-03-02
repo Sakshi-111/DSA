@@ -68,23 +68,61 @@ using namespace std;
 // }
 
 //peak index in a mountain array
-int peak(int arr[],int size){
+// int peak(int arr[],int size){
+//     int start=0;
+//     int end=size-1;
+//     int mid=start+(end-start)/2;
+//     while(start<end){
+//         if(arr[mid]<arr[mid+1] ){
+//             start=mid+1;
+//         }
+//         else{
+//             end=mid;
+//         }
+//         mid=start+(end-start)/2;
+
+
+//     }
+//     return start;
+// }
+// int main(){
+   
+//   cout<<sizeof(arr)/sizeof(int);}
+//pivot element
+// int pivot(int arr[],int size){
+//     int min= arr[0];
+//     for(int i=1;i<size;i++){
+//         if (arr[i]<min){
+//             min=arr[i];
+//         }
+//     }
+//     return min;
+
+// }
+// int main(){
+//     int arr[7]={1,2,3,4,5,43,0};
+//     cout<<pivott(arr,7);
+// }
+//pivot using binary search
+int pivott(int arr[],int size){
     int start=0;
     int end=size-1;
-    int mid=start+(end-start)/2;
+    int mid= start+(end-start)/2;
     while(start<end){
-        if(arr[mid]<arr[mid+1] ){
+        if(arr[mid]>=arr[0]){
             start=mid+1;
         }
         else{
             end=mid;
+
         }
         mid=start+(end-start)/2;
-
-
+       
     }
     return start;
+    
 }
 int main(){
-    int arr[7]={1,2,3,4,3,2,1};
-  cout<<peak(arr,7);}
+    int arr[7]={8,9,10,1,5,43};
+    cout<<pivott(arr,7)<<endl;
+}
