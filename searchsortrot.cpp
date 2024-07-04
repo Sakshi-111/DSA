@@ -54,8 +54,5 @@ using namespace std;
 //           return -1;
 
 // }
-int main(){
-    int n;
-    cout<<"hello";
-    cin>>n;
-}
+
+
