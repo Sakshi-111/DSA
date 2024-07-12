@@ -164,24 +164,35 @@ using namespace std;
 //     }
     
 // }
-void pattern10(int n){
-    int m=(n*2)-1;
-    int j;
-    
-    for(int i=1;i<=n;i++){
-        for(int j=0;j<m;j++){
-            if(j>=n-i && j<=n+i-2){
-                cout<<"num";}
-                else cout<<" ";
+// void pattern10(int n){
+//     int m=(n*2)-1;
+//     int j;
+   
+//     for(int i=1;i<=n;i++){
+//          int num=1;
+//         for(int j=1;j<=m;j++){
+//            for(int k=0;k<n-i;k++){
+//             cout<<"  ";
+//            }
+//            for(int w=n-i;w<=n;w++){
+//             cout<<num<<' ';
+//             num++;
+//            }
+//            int numm=1;
+//            for(int q=n+i-1;q<m-(n+i);q++){
+//             cout<<numm<<" ";
+//             numm++;
+//            }
+// cout<<endl;
            
             
 
         } 
-        cout<<endl;
+        
         
      
 
-    } cout<<endl;
+    } 
 }
 
 
