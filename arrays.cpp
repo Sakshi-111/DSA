@@ -24,13 +24,36 @@ using namespace std;
 //         start=start+1;
 //         end=end-1;}    
 // }
+// class Solution {
+// public:
+//     bool uniqueOccurrences(vector<int>& arr) {
+//         vector<int>ans;
+//         int size=arr.size();
+//         sort(arr.begin(),arr.end());
+// int count=0
+//         for(int i=0;i<size-1;i+=count){
+//             count=1;
+//             for(int j=0;j<size;j++){
+//                 if(arr[i]==arr[j]){
+//                     count++;
+//             }
+//             else{
+//                 break;
+            
+//             }
+//         }
+//         ans.push_back(count);
+//         }
+//         sort(ans.begin(),ans.end());
 
+//         size=ans.size();
+//         for(int i=0;i<size-1;i++ ){
+//             if(ans[i]==ans[i+1]){
+//                 return false;
+//             }
+            
+//         }return true;
 
-int main(){
-    int arr[5]={1,2,3,4,5};
-
-     ReverseArray(arr,5);
-    PrintArray(arr,5);
-    return 0;
-
-}
+        
+//     }
+// };
