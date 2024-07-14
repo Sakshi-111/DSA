@@ -128,3 +128,22 @@ using namespace std;
 //         }
      
 // }
+// void bubblesort(vector<int>&nums,int size){
+//     for(int i=1;i<size;i++){
+//         for(int j=0;j<size-i;j++){
+//            if(nums[j]>nums[j+1]){
+//             swap(nums[j], nums[j +1]);
+//            } 
+//         }
+
+// }
+// }
+// int main(){
+//     vector<int>nums={1,5,7,2,4,3};
+//     int sizee=nums.size();
+//     bubblesort(nums,sizee);
+//     for(int i=0;i<sizee;i++){
+//         cout<<nums[i]<<" ";
+// }
+// }
+
