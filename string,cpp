@@ -1,18 +1,75 @@
 #include <iostream>
 using namespace std;
-char printname(char name[]){
-    cout<<"Hello "<<name<<endl;
-}
-int getlength(char name[]){
-    int count=0;
-    for(int i=0;name[i]!='\0';i++){
-        count++;
-}
-return count;
-}
-void reversestring(char name[],length){
-    int s=0;
-    int e=len-1;
-    while(s<e){
-        swap(name[s++],name[e--]);
-}
+// char printname(char name[]){
+//     cout<<"Hello "<<name<<endl;
+// }
+// int getlength(char name[]){
+//     int count=0;
+//     for(int i=0;name[i]!='\0';i++){
+//         count++;
+// }
+// return count;
+// }
+// void reversestring(char name[],length){
+//     int s=0;
+//     int e=len-1;
+//     while(s<e){
+//         swap(name[s++],name[e--]);
+// }
+
+//storing character count 
+//  int count[26]={0};
+//         for(int i=0;i<s1.length();i++){
+//             int num= s1[i]-'a';
+//             count[num]++;
+
+
+
+// class Solution {
+//     private:
+//     bool checkEqual(int a[26],int b[26]){
+//         for(int i=0;i<26;i++){
+//             if(a[i]!=b[i]){
+//                 return 0;
+//             }
+//         }
+//         return 1;
+//     }
+// public:
+//     bool checkInclusion(string s1, string s2) {
+
+//         int count[26]={0};
+//         for(int i=0;i<s1.length();i++){
+//             int num= s1[i]-'a';
+//             count[num]++;
+//         } 
+//         int count2[26]={0};
+//         int i=0;
+//         while(i< s1.length() &&i<s2.length()){
+//             int num=s2[i]-'a';
+//             count2[num]++;
+//             i++;
+
+//         }
+//         if (checkEqual(count,count2)){
+//             return 1;
+//         } 
+//        while(i<s2.length()){
+//         char newChar =s2[i];
+//         int index= newChar -'a';
+//         count2[index]++;
+//          char oldchar=s2[i-s1.length()];
+//          index=oldchar-'a';
+//          count2[index]--;
+
+//          i++;
+//          if (checkEqual(count,count2)){
+//             return 1;
+//         } 
+        
+
+//        }
+//        return 0;
+
+//     }
+// };
