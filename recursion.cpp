@@ -31,3 +31,29 @@ using namespace std;
 //    cout<<ans;
 //    return 0;
 // }
+
+// int fib(int num)
+// {
+//     if(n==0){
+//         return 0;
+//     }
+//     if(n==1){
+//         return 1;
+//     }
+//     return fib(n-1)+fib(n-2);
+// }
+
+int saynum(int num){
+    string arr[10]={"one","two","three","four","five","six","seven","eight","nine","ten"};
+    if(num==0){
+        return 0 ;}
+        int digit=num%10;
+       num=num/10;
+        saynum(num);
+         cout<<arr[digit-1];
+        return 0;
+}
+int main(){
+    cout<<saynum(345);
+    return 0;
+}
