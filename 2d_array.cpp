@@ -12,7 +12,7 @@ cout<<endl;
 }
 }
 
-//linear search in 2 d array
+//linear search in 2-d array
 bool linearsearch(int arr[][4],int target ,int row ,int col){
     for(int i=0;i<row;i++){
         for(int j=0;j<col;j++){
