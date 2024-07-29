@@ -43,17 +43,40 @@ using namespace std;
 //     return fib(n-1)+fib(n-2);
 // }
 
-int saynum(int num){
-    string arr[10]={"one","two","three","four","five","six","seven","eight","nine","ten"};
-    if(num==0){
-        return 0 ;}
-        int digit=num%10;
-       num=num/10;
-        saynum(num);
-         cout<<arr[digit-1];
-        return 0;
-}
-int main(){
-    cout<<saynum(345);
-    return 0;
-}
+// void saynum(int num){
+//     string arr[10]={"one","two","three","four","five","six","seven","eight","nine","ten"};
+//     if(num==0){
+//         return 0 ;}
+//         int digit=num%10;
+//        num=num/10;
+//         saynum(num);
+//          cout<<arr[digit-1];
+        
+// }
+// int main(){
+//     cout<<saynum(345);
+//     return 0;
+// }
+
+// bool ifsorted(int arr[],int size){
+
+//     if(size==1 || size==0){
+//         return true;
+// }
+// else if(arr[0]>arr[1]){
+//         return false;
+// }
+// else{
+//     bool ans= ifsorted(arr+1,size-1);
+//     return ans;
+// }
+// }
+// int main(){
+//     int arr[]={1,2,3,4,5};
+//     int size= sizeof(arr)/sizeof(arr[0]);
+    
+//     bool ans= ifsorted(arr,size);
+    
+//     cout<<ans;
+//     return 0;
+// }
