@@ -101,3 +101,31 @@ using namespace std;
 //     cout<<ans;
 //     return ans;
 // }
+
+// bool linearsearch(int arr[],int size,int target ){
+//     if(size==0){
+//         return false;
+
+//     }
+//     if(arr[0]==target){
+//         return true;
+//     }
+//     int ans= linearsearch(arr+1,size-1,target);
+//     return ans;
+    
+    
+
+
+// }
+// int main(){
+//     int arr[7]= {1,2,3,4,5,6,7};
+//     bool ans=linearsearch(arr,7,8);
+//     if(ans){
+//         cout<<"found";
+//     }
+//     else{
+//         cout<<"not found";
+//     }
+//     return 0;
+
+// }
