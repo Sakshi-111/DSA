@@ -80,3 +80,24 @@ using namespace std;
 //     cout<<ans;
 //     return 0;
 // }
+// int sum(int arr[],int size){
+   
+//     if(size==0){
+//         return 0;
+        
+// }
+// if(size==1){
+//     return arr[0];
+// }
+
+
+//     int ans=arr[0]+sum(arr+1,size-1);
+//     return ans;
+// }
+// int main(){
+//     int arr[]={1,2,3,4,5};
+//     int size= sizeof(arr)/sizeof(arr[0]);
+//     int ans= sum(arr,size);
+//     cout<<ans;
+//     return ans;
+// }
