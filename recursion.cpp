@@ -156,22 +156,43 @@ using namespace std;
 //     return 0;
 // }
 
-void rever(string &s,int i,int j){
+// void rever(string &s,int i,int j){
     
-    if(i>j){
-        return;
-    }
+//     if(i>j){
+//         return;
+//     }
    
-        swap(s[i],s[j]);
-        i++;
-        j--;
+//         swap(s[i],s[j]);
+//         i++;
+//         j--;
     
-    rever(s,i,j);
+//     rever(s,i,j);
 
-}
-int main(){
-    string s="hello";
-    rever(s,0,s.length()-1);
-    cout<<s;
-    return 0;
-}
+// }
+// int main(){
+//     string s="hello";
+//     rever(s,0,s.length()-1);
+//     cout<<s;
+//     return 0;
+// }
+// bool checkpalindrome(string s ,int i,int j){
+// if(i>j){
+//         return true;
+// }
+// if(s[i]!=s[j]){
+//     return false;
+// }
+// i++;
+// j--;
+// checkpalindrome(s,i,j);
+// }
+// int main(){
+//     string s ="naman";
+//     if(checkpalindrome(s,0,s.length()-1)){
+//         cout<<"yes";
+// }
+// else{
+//     cout<<"no";
+// }
+// return 0;
+// }
