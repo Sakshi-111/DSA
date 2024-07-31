@@ -129,3 +129,49 @@ using namespace std;
 //     return 0;
 
 // }
+
+// bool binarysearch(int arr[],int start,int end,int target){
+//      int mid= start+(end-start)/2;
+//      if(start>end){
+//     return 0;
+// }
+// if (arr[mid]==target){
+//     return true;
+// }
+// else if(arr[mid]>target){
+//   return binarysearch(arr,start,mid-1,target);
+// }
+// else{
+//     return binarysearch(arr,mid+1,end,target);
+// }
+//     }
+   
+
+
+// int main(){
+//     int arr[8]={1,2,3,4,5,6,7,8};
+//     if(binarysearch(arr,0,7,4)){
+//         cout<<"found";
+//     }
+//     return 0;
+// }
+
+void rever(string &s,int i,int j){
+    
+    if(i>j){
+        return;
+    }
+   
+        swap(s[i],s[j]);
+        i++;
+        j--;
+    
+    rever(s,i,j);
+
+}
+int main(){
+    string s="hello";
+    rever(s,0,s.length()-1);
+    cout<<s;
+    return 0;
+}
