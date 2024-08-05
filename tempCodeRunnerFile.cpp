@@ -1,1 +1,1 @@
- // cout<<b->gethealth();
+delete c;
