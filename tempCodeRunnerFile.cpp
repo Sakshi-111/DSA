@@ -1,1 +1,1 @@
-delete c;
+printnode(head);
