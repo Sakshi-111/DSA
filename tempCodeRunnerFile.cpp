@@ -1,1 +1,1 @@
-printnode(head);
+ cout<<  getlength(head);
