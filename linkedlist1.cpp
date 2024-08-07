@@ -88,20 +88,32 @@ void printnode(node * &head){
 void deletenode(node* &head,int pos){
     node*curr=head;
     node *prev=NULL;
+    
     if(pos==1){
         node*temp=head;
         head=head->ptr;
+        temp->ptr=NULL;
         delete temp;
+
+
 
     }
     int cnt=1;
-    while(cnt<=pos){
+    while(cnt<pos){
         prev=curr;
         curr=curr->ptr;
          cnt++;
     }
+    if(curr->ptr==NULL){
+        prev->ptr=NULL;
+      node* tail=prev;
+
+    }
+    
     prev->ptr=curr->ptr;
+    curr->ptr=NULL; 
     delete curr;
+    
     
 }
 // void deletenode(node* &head, int pos) {
@@ -172,8 +184,9 @@ cout<<endl;
 cout<<"head"<<head->data<<endl;
 cout<<"tail"<<tail->data<<endl;
 
-deletenode(head,2);
+deletenode(head,3);
 printnode(head);
+cout<<tail;
 
 
 
