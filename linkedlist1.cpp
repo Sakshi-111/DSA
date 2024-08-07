@@ -11,6 +11,7 @@ class node{
         this->ptr=NULL;
 
     }
+    
 };
 void  INSERTAthead(node * &head, int d){
     node * temp= new node(d);
@@ -60,6 +61,81 @@ void printnode(node * &head){
     }
 
 }
+// void deletenode(node* &head ,int pos){
+//     node*temp= head;
+//     if(pos==1){
+       
+//        head= head->ptr;
+//        free(temp);
+//        
+//     }
+    
+    
+    
+   
+//     int cnt =1;
+//     while(cnt<pos-1){
+//         temp=temp->ptr;
+//         cnt++;
+//     }
+//     node *curr=NULL ;
+//     curr=temp->ptr;
+//     temp->ptr=curr->ptr;
+//     delete curr;
+    
+
+// }
+void deletenode(node* &head,int pos){
+    node*curr=head;
+    node *prev=NULL;
+    if(pos==1){
+        node*temp=head;
+        head=head->ptr;
+        delete temp;
+
+    }
+    int cnt=1;
+    while(cnt<=pos){
+        prev=curr;
+        curr=curr->ptr;
+         cnt++;
+    }
+    prev->ptr=curr->ptr;
+    delete curr;
+    
+}
+// void deletenode(node* &head, int pos) {
+//     if (pos < 1 || head == NULL) {
+//         // Invalid position or empty list
+//         return;
+//     }
+    
+//     node* curr = head;
+    
+//     if (pos == 1) {
+//         head = head->ptr;
+//         delete curr;
+//         return;
+//     }
+    
+//     node* prev = NULL;
+//     int cnt = 1;
+    
+//     while (cnt < pos && curr != NULL) {
+//         prev = curr;
+//         curr = curr->ptr;
+//         cnt++;
+//     }
+    
+//     if (curr == NULL) {
+//         // Position is greater than the number of nodes
+//         return;
+//     }
+    
+//     prev->ptr = curr->ptr;
+//     delete curr;
+// }
+
 
 
 
@@ -95,6 +171,10 @@ printnode(head);
 cout<<endl;
 cout<<"head"<<head->data<<endl;
 cout<<"tail"<<tail->data<<endl;
+
+deletenode(head,2);
+printnode(head);
+
 
 
 
