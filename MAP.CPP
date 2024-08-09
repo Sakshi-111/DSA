@@ -1,4 +1,7 @@
-int main(){
+#include <iostream>
+using namespace std;
+#include <map>
+// int main(){
 //     int n;
 //     cin>>n;
 //     int arr[n];
@@ -20,3 +23,17 @@ int main(){
 //         appearences--;
 //     }
 // }
+int main(){
+    map<int,int>mpp;
+    for(int i=0;i<4;i++){
+        int x;
+        cin>>x;
+        mpp[x]++;
+    }
+    for(auto i:mpp){
+        
+        cout<<i.first<<"->";
+        cout<<i.second<<" ";
+
+    }
+}
