@@ -196,3 +196,43 @@ using namespace std;
 // }
 // return 0;
 // }
+
+
+// void fun(int n){
+//    if(n<0){
+//       return;
+//    }
+//    cout<<n<<" ";
+  
+//    fun(--n);
+
+// }
+// int main(){
+//    int no=5;
+   
+//    fun(no);
+// }
+
+// void fun(int i,int n){
+//    if(i>n){
+//       return;
+//    }
+//    fun(i+1,n);
+//    cout<<i;
+// }
+// int main(){
+//    int n = 5;
+//    fun(1,n);
+// }
+void fun(int n){
+   if(n<=1){
+      return;
+   }
+   fun(--n);
+   cout<<n;
+
+}
+int main(){
+   int no=5;
+   fun(5);
+}
